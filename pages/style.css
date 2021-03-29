@@ -1,0 +1,402 @@
+*{
+    font-family: Montserrat;
+ color: #EFF3F5; 
+ cursor: url(../images/cursor-def.png), auto;
+}
+body{
+    background: #6E105E;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1304px;
+    margin: auto;
+}
+
+/* HEADER */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 33px 0;
+}
+.logo{
+    width: 98px;
+    height: 98px;
+    cursor: url(../images/cursor-active.png), auto;
+} 
+
+.menu-top{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu-top a{
+    margin: 0 15px;
+    font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-decoration: none;
+cursor: url(../images/cursor-active.png), auto;
+}
+.lang-pages{
+   font-weight: 600;
+font-size: 20px;
+line-height: 24px; 
+
+}
+
+
+
+/* SECTION */
+.breadcrumb{
+    margin-bottom: 33px;
+}
+.breadcrumb a{
+    font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+text-decoration: none;
+}
+.bc-pages-active{
+    padding: 2px 11px;
+    border-radius: 10px;
+    background: #EFF3F5;
+    color: #6E105E;
+}
+.bloggeri{
+    font-weight: 800;
+font-size: 50px;
+line-height: 61px;
+text-align: center;
+}
+.sort{
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+.sort-text{
+    font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+}
+.zagolovok{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 20px;
+    z-index: 999999;
+}
+
+
+.ploshadka, .napravlenie{
+    position: relative;
+    height: 20px;
+}
+
+.zagolovok:hover .hover-menu{
+    opacity: 1;
+    transition: 0.4s;
+}
+.napravlenie:hover  .hover-menu{
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.hover-menu{
+    opacity: 0;
+    margin: 0px 12px;
+    position: absolute;
+    width: 83%;
+    top: 23px;
+    z-index: 99999;
+    padding: 10px;
+    background: rgba(110, 16, 94, 0.5);
+border: 0.5px solid #000000;
+box-sizing: border-box;
+box-shadow: inset 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
+backdrop-filter: blur(20px);
+border-radius: 12px;
+text-align: left;
+}
+
+.hover-menu a{
+    font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #EFF3F5;
+display: block;
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+.hover-menu a:hover{
+    background: #D26600;
+border-radius: 5px;
+padding: 3px 10px;
+transition: 0.3s;
+}
+.hover-menu span{
+    margin-bottom: 5px;
+    font-weight: normal;
+font-size: 13px;
+line-height: 19px;
+color: #EFF3F5;
+opacity: 0.4;
+}
+
+.hover-menu img{
+    margin: 0 45%
+}
+
+
+.content-blogery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-blogger{
+    width: 23%;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: url(../images/cursor-active.png), auto;
+}
+
+.item-blogger a:hover .image-bloger:before{
+    opacity: 0;
+    transition: 0.4s;
+}
+.item-blogger a:hover .image-bloger img{
+    box-shadow: 0px 0px 10px 3px #00000069;
+}
+.item-blogger a:hover .info-bloger{
+    opacity: 0;
+    transition: 0.4s;
+
+}
+.image-bloger img{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.image-bloger:before{
+    content: ' ';
+    background: #bd1c9f88;
+    z-index: 5;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.info-bloger{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    z-index: 1000;
+    padding: 10px;
+}
+.followers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.info-bloger h3{
+    margin: 0;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 37px;
+}
+
+.followers p{
+    width: 48%;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.loading{
+    position: relative;
+    margin: 50px 0;
+}
+.btn-load{
+    position: absolute;
+    top: -20px;
+    left: 46%;
+    padding: 10px 37px;
+    text-decoration: none;
+    background: #6E105E;
+}
+
+.prokrutka{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 42px 0;
+}
+.prokrutka-center{
+    padding: 0px 0px 9px 0px;
+}
+.prokrutka-prev{
+    margin: 0 24px;
+}
+.prokrutka-next{
+    margin: 0 24px;
+}
+
+
+/* SECTION 2 pages */
+.video-bloger{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.video-bloger-item{
+    margin-bottom: 20px;
+    position: relative;
+    cursor: url(../images/cursor-active.png), auto;
+}
+.video-bloger-item:before{
+    content: ' ';
+    background: #bd1c9f11;
+    z-index: 5;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.polygon{
+    position: absolute;
+    top: 39%;
+    left: 47%;
+}
+.video-bloger-item:hover .polygon{
+    opacity: 0;
+    transition: 0.4s;
+
+}
+.video-bloger-item:hover .video-bloger-item:before{
+    opacity: 0;
+    transition: 0.4s;
+}
+
+
+/* SECTION-3 */
+.info-people{
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #EFF3F5;
+box-sizing: border-box;
+background: rgba(255, 255, 255, 0.25);
+
+}
+
+
+.image-avatar{
+    width: 33%;
+}
+.image-avatar img{
+    height: 100%;
+}
+.info-bloger-1{
+    width: 67%;
+    padding: 0px 40px;
+}
+
+.info-bloger-1 h2{
+    margin: 28px auto;
+}
+.soc-seti-bloger{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.soc-seti-bloger-items{
+    display: flex;
+    align-items: space-around;
+    /* width: 35%; */
+    margin-bottom: 30px;
+}
+.soc-seti-bloger-followers{
+    margin: 0px 20px;
+}
+.soc-seti-bloger-followers p{
+    font-weight: bold !important;
+font-size: 30px !important;
+line-height: 37px !important;
+margin: 0;
+}
+
+.soc-seti-bloger-followers span{
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+
+.info-bloger-1 h5{
+    font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+margin: 0;
+}
+.info-bloger-1 p{
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+/* FOOTER */
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 12px auto;
+}
+
+.logo-footer{
+    width: 20%;
+    cursor: url(../images/cursor-active.png), auto;
+}
+.information{
+    width: 79%;
+
+}
+.inffo-adres{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-bottom: 30px;
+}
+.inffo-adres{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: #EFF3F5;
+}
+.info-social{
+    display: flex;
+    justify-content: center;
+}
+.info-social a{
+    padding: 0 15px;
+}
+.information a{
+    text-decoration: none;
+}
+
+
+/* MENU BURGER */
+
+
